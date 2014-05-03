@@ -251,7 +251,8 @@ namespace DbGhost.Build.ChangeManager
 
                 if (pathNode.ParentNode != null)
                     switch (pathNode.ParentNode.Name)
-                    {
+					{
+						case "BeforeBuildScript":
                         case "AfterBuildScript":
                         case "BeforeSyncScript":
                         case "AfterSyncScript":
