@@ -4,7 +4,7 @@ namespace DbGhost.Build.Util
 {
     internal static class StringExtensions
     {
-        public static string[] GetWords(this string text, int maxLength)
+        public static string[] GetWords(string text, int maxLength)
         {
             var words = new List<string>();
             var position = 0;

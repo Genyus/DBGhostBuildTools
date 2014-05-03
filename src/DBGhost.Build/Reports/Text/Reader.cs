@@ -1,40 +1,42 @@
-﻿using System;
+using System;
 using System.IO;
-
 namespace DbGhost.Build.Reports.Text
 {
-    internal class Reader : IDisposable 
-    {
-        private readonly TextReader _reader;
-
-        public Reader(string path)
-        {
-            _reader = new StreamReader(path);
-        }
-
-        public Entry Read()
-        {
-            string[] fields;
-
-            var data = _reader.ReadLine();
-
-            if (data != null)
-            {
-                data = data.Trim();
-                fields = data.Split(new [] { "..." }, 2, StringSplitOptions.None);
-                switch (fields.Length)
-                {
-                    case 1: return new Entry(data);
-                    case 2: return new Entry(fields[0].Trim(), fields[1].Trim());
-                    default: return new Entry(data);
-                }
-            }
-            return null;
-        }
-
-        public void Dispose()
-        {
-            if (_reader != null) _reader.Dispose();
-        }
-    }
+	internal class Reader : IDisposable
+	{
+		private readonly TextReader _reader;
+		public Reader(string path)
+		{
+			_reader = new StreamReader(path);
+		}
+		public Entry Read()
+		{
+			string text = _reader.ReadLine();
+			if (text == null)
+			{
+				return null;
+			}
+			text = text.Trim();
+			string[] array = text.Split(new string[]
+			{
+				"..."
+			}, 2, StringSplitOptions.None);
+			switch (array.Length)
+			{
+			case 1:
+				return new Entry(text);
+			case 2:
+				return new Entry(array[0].Trim(), array[1].Trim());
+			default:
+				return new Entry(text);
+			}
+		}
+		public void Dispose()
+		{
+			if (_reader != null)
+			{
+				_reader.Dispose();
+			}
+		}
+	}
 }

@@ -72,7 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeManager\Task.cs" />
+    <Compile Include="PackagerPlus\Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Help\ChangeManager.htm" />

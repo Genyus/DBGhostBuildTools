@@ -69,17 +69,27 @@
   <ItemGroup>
     <Compile Include="ChangeManager\ConfigurationBuilder.cs" />
     <Compile Include="ChangeManager\ConfigurationXPath.cs" />
+    <Compile Include="Common\ConfigurationBase.cs" />
+    <Compile Include="Common\Database.cs" />
+    <Compile Include="Common\IApplication.cs" />
+    <Compile Include="Common\ParametersBase.cs" />
+    <Compile Include="EventArgs.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
     <Compile Include="ChangeManager\Application.cs" />
     <Compile Include="ChangeManager\Configuration.cs" />
     <Compile Include="ChangeManager\Parameters.cs" />
     <Compile Include="ChangeManager\ReportFormatter.cs" />
-    <Compile Include="EventHandler.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\XDocumentExtensions.cs" />
     <Compile Include="Extensions\XElementExtensions.cs" />
     <Compile Include="Extensions\XmlDocumentExtensions.cs" />
+    <Compile Include="PackagerPlus\Application.cs" />
+    <Compile Include="PackagerPlus\Configuration.cs" />
+    <Compile Include="PackagerPlus\ConfigurationBuilder.cs" />
+    <Compile Include="PackagerPlus\ConfigurationXPath.cs" />
+    <Compile Include="PackagerPlus\Parameters.cs" />
+    <Compile Include="PackagerPlus\ReportFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports\FormatterResult.cs" />
     <Compile Include="Reports\IReportFormatter.cs" />
@@ -110,6 +120,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

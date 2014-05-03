@@ -1,7 +1,8 @@
-﻿namespace DbGhost.Build.Reports
+using System;
+namespace DbGhost.Build.Reports
 {
-    public interface IReportFormatter
-    {
-        FormatterResult Load(string path);
-    }
+	public interface IReportFormatter
+	{
+		FormatterResult Load(string path);
+	}
 }

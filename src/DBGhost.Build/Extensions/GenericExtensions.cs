@@ -1,15 +1,29 @@
-﻿namespace DbGhost.Build.Extensions
+namespace DbGhost.Build.Extensions
 {
-    static class GenericExtensions
-    {
-        public static T Coalesce<T>(this T value, T newValue) where T : class
-        {
-            return value ?? newValue;
-        }
+	internal static class GenericExtensions
+	{
+		public static T Coalesce<T>(this T value, T newValue) where T : class
+		{
+			T instance = value;
 
-        public static T CoalesceReverse<T>(this T value, T newValue) where T : class
-        {
-            return newValue ?? value;
-        }
-    }
+			if (value == null)
+			{
+				instance = newValue;
+			}
+
+			return instance;
+		}
+
+		public static T CoalesceReverse<T>(this T value, T newValue) where T : class
+		{
+			T instance = newValue;
+
+			if (newValue == null)
+			{
+				instance = value;
+			}
+
+			return instance;
+		}
+	}
 }

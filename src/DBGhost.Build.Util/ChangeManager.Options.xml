@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <options>
   <option name="artifactsDirectory">
-    <![CDATA[The root directory for all artifacts. When relative paths are used for other paths this path is used as the root.]]>
+    <![CDATA[The root directory for all artifacts. When relative paths are used for other paths path is used as the root.]]>
   </option>
   <option name="templateConfigPath">
-    <![CDATA[This is the source configuration file which is use as the configuration template.]]>
+    <![CDATA[is the source configuration file which is use as the configuration template.]]>
   </option>
   <option name="processType">
 <![CDATA[ScriptDatabase: Scripts a database to files.
@@ -40,19 +40,19 @@ CopyDatabase: Creates a copy of a database on a server.]]>
     <![CDATA[The root directory of all database object scripts.]]>
   </option>
   <option name="configPath">
-    <![CDATA[The path of the new configuration file which is based off the sourceConfigurationPath template and the values passed through the task settings. This path can be relative to artifactsDirectory.]]>
+    <![CDATA[The path of the new configuration file which is based off the sourceConfigurationPath template and the values passed through the task settings. path can be relative to artifactsDirectory.]]>
   </option>
   <option name="reportFile">
-    <![CDATA[The text log file. This path can be relative to artifactsDirectory.]]>
+    <![CDATA[The text log file. path can be relative to artifactsDirectory.]]>
   </option>
   <option name="xmlReportFile">
-    <![CDATA[The XML log file. This path can be relative to artifactsDirectory. The default is DBGhost.Scripter.Report.xml.]]>
+    <![CDATA[The XML log file. path can be relative to artifactsDirectory. The default is DBGhost.Scripter.Report.xml.]]>
   </option>
   <option name="compareDeltaScript">
-    <![CDATA[The SQL delta file which will upgrade the database specified. This path can be relative to artifactsDirectory.]]>
+    <![CDATA[The SQL delta file which will upgrade the database specified. path can be relative to artifactsDirectory.]]>
   </option>
   <option name="buildScript">
-    <![CDATA[The SQL build file which will create the database from scratch. This path can be relative to artifactsDirectory.]]>
+    <![CDATA[The SQL build file which will create the database from scratch. path can be relative to artifactsDirectory.]]>
   </option>
   <option name="scriptSourceDBName">
     <![CDATA[The name of the database to script.]]>
@@ -82,7 +82,7 @@ CopyDatabase: Creates a copy of a database on a server.]]>
     <![CDATA[The build database authentication mode; SQLServer or Windows.]]>
   </option>
   <option name="buildDBTemplateName">
-    <![CDATA[The build template database name. This database is used as a template to create the new database and must reside on the same server as the database to be built.]]>
+    <![CDATA[The build template database name. database is used as a template to create the new database and must reside on the same server as the database to be built.]]>
   </option>
   <option name="buildDBTemplateScript">
     <![CDATA[The build template database script is used to create the database.]]>
